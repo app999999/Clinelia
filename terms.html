@@ -1,40 +1,106 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Clinelia - Service</title>
-  <style>
-    * {box-sizing: border-box;}
-    body {margin:0; font-family: Arial, sans-serif;}
-    header {
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:15px 30px;
-      background:#0a2540;
-      color:white;
-      flex-wrap: wrap;
-    }
-    nav a {
-      margin-left:15px;
-      text-decoration:none;
-      color:white;
-    }
-    .download-btn {
-      background:#00c853;
-      padding:8px 15px;
-      border-radius:5px;
-      color:white;
-    }
-    .content {text-align:center; padding:60px 20px;}
-    @media(max-width:768px) {
-      header {flex-direction:column; align-items:flex-start;}
-      nav {margin-top:10px;}
-      nav a {display:block; margin:5px 0;}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | Clinelia</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f6f9;
+    color: #1a1a1a;
+    line-height: 1.7;
+}
+
+header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-weight: 600;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #007bff;
+}
+
+.download-btn {
+    background-color: #007bff;
+    color: white !important;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+.footer {
+    text-align: center;
+    margin: 60px 0 40px 0;
+    font-size: 14px;
+    color: gray;
+}
+
+@media(max-width:768px) {
+    header {flex-direction: column; align-items: flex-start;}
+    header nav {margin-top: 10px;}
+    header nav a {display: block; margin: 5px 0;}
+}
+</style>
 </head>
+
 <body>
 
 <header>
@@ -49,9 +115,40 @@
   </nav>
 </header>
 
-<div class="content">
-  <h1>Terms of Service</h1>
-  <p>Ved bruk av Clinelia godtar du våre vilkår og betingelser.</p>
+<div class="container">
+
+<h1>Terms of Service</h1>
+
+<p>Velkommen til Clinelia! Ved å bruke appen godtar du følgende vilkår:</p>
+
+<h2>Bruk av tjenesten</h2>
+<ul>
+<li>Du må bruke appen i tråd med lovverket</li>
+<li>Du må gi riktige og fullstendige opplysninger</li>
+</ul>
+
+<h2>Ansvarsbegrensning</h2>
+<ul>
+<li>Clinelia er ikke ansvarlig for tap som følge av feil bruk</li>
+<li>Tjenesten kan endres uten varsel</li>
+</ul>
+
+<h2>Brukerens plikter</h2>
+<ul>
+<li>Ikke misbruk tjenesten</li>
+<li>Ikke del sensitiv informasjon uten samtykke</li>
+</ul>
+
+<h2>Endringer i vilkår</h2>
+<p>Vilkårene kan oppdateres og bruk av appen etter endringene innebærer aksept.</p>
+
+<h2>Kontakt</h2>
+<p>Har du spørsmål? Send e-post til: <strong>clinelia.app@gmail.com</strong></p>
+
+</div>
+
+<div class="footer">
+© 2026 Clinelia. Alle rettigheter reservert.
 </div>
 
 </body>
