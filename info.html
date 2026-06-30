@@ -4,149 +4,114 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clinelia - Informasjon</title>
+
 <style>
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: #f4f6f9;
-    color: #1a1a1a;
-    line-height: 1.7;
-}
-
-header {
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-weight: 600;
-    font-size: 20px;
-    flex-wrap: wrap;
-}
-
-header nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 500;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #007bff;
-}
-
-.download-btn {
-    background-color: #007bff;
-    color: white !important;
-    padding: 8px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-left: 20px;
-    transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-    background-color: #0056b3;
-}
-
-.container {
-    max-width: 900px;
-    margin: 60px auto;
-    background: white;
-    padding: 50px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-h2 {
-    margin-top: 40px;
-    font-size: 22px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-ul {
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 8px;
-}
-
-.footer {
-    text-align: center;
-    margin: 60px 0 40px 0;
-    font-size: 14px;
-    color: gray;
-}
-
-@media(max-width:768px) {
-    header {flex-direction: column; align-items: flex-start;}
-    header nav {margin-top: 10px;}
-    header nav a {display: block; margin: 5px 0;}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#050505;background:#fff}
+.header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(14px);padding:26px 5%}
+.navbar{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:26px;font-weight:800;color:#000;text-decoration:none}
+.nav{display:flex;align-items:center;gap:34px}
+.nav a{color:#000;text-decoration:none;font-size:16px;font-weight:600}
+.download{background:#000!important;color:#fff!important;padding:14px 24px;border-radius:999px}
+.menu-btn{display:none;background:none;border:0;font-size:38px;cursor:pointer}
+.mobile-menu{display:none;position:fixed;inset:0;background:#fff;z-index:99;padding:34px 7%}
+.mobile-top{display:flex;justify-content:space-between;align-items:center}
+.close{font-size:54px;background:none;border:0;cursor:pointer}
+.mobile-links{height:70vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:46px}
+.mobile-links a{font-size:28px;font-weight:700;color:#000;text-decoration:none}
+.mobile-download{text-align:center}
+.mobile-download p{font-weight:800;font-size:20px}
+.ios-btn{display:inline-flex;gap:12px;background:#000;color:#fff;text-decoration:none;border-radius:999px;padding:18px 46px;font-size:24px;font-weight:800}
+.page{max-width:980px;margin:auto;padding:80px 5%}
+h1{font-size:clamp(44px,7vw,76px);letter-spacing:-3px;line-height:1;margin:0 0 26px}
+h2{font-size:28px;margin-top:54px;margin-bottom:14px}
+p,li{font-size:19px;line-height:1.8;color:#333}
+ul{padding-left:24px}
+.card{border:1px solid #eee;border-radius:30px;padding:42px;background:#fafafa;margin-top:28px}
+.footer{text-align:center;color:#777;padding:40px 20px}
+@media(max-width:800px){
+.header{padding:32px 7%}.nav{display:none}.menu-btn{display:block}.mobile-menu.active{display:block}
+.page{padding:55px 7%}.card{padding:28px;border-radius:24px}
 }
 </style>
 </head>
+
 <body>
 
-<header>
-  <div><strong>Clinelia</strong></div>
-  <nav>
-    <a href="index.html">Introduksjon</a>
-    <a href="info.html">Informasjon</a>
-    <a href="contact.html">Send Email</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="terms.html">Service</a>
-    <a class="download-btn" href="#">Last ned appen</a>
-  </nav>
+<header class="header">
+  <div class="navbar">
+    <a class="logo" href="index.html">Clinelia</a>
+    <nav class="nav">
+      <a href="index.html">Introduksjon</a>
+      <a href="info.html">Informasjon</a>
+      <a href="contact.html">Send Email</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Service</a>
+      <a class="download" href="#">Last ned appen</a>
+    </nav>
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+  </div>
 </header>
 
-<div class="container">
-
-<h1>Informasjon</h1>
-<p>Clinelia hjelper deg med helse, booking og kommunikasjon. Her er hvordan vi kan støtte deg:</p>
-
-<h2>Kjerneprinsipper</h2>
-<ul>
-<li><strong>Express yourself:</strong> Del din unike stil – outfits, vesker, sko og tilbehør – og inspirer andre.</li>
-<li><strong>Discover parts of yourself:</strong> Utforsk nye looks og oppdag stiler du ikke visste du likte.</li>
-<li><strong>Inspiration:</strong> Få inspirasjon fra ulike stilkategorier og kombinasjoner.</li>
-</ul>
-
-<h2>Om fellesskapet</h2>
-<ul>
-<li>Fashion handler om å uttrykke seg, finne inspirasjon og skape forbindelser med likesinnede.</li>
-<li><strong>Global community:</strong> Møt moteentusiaster over hele verden.</li>
-<li><strong>Creative inspiration:</strong> Oppdag daglig inspirasjon fra andre brukere.</li>
-<li><strong>Supportive environment:</strong> Et positivt fellesskap uten dømming.</li>
-<li>Følg skapere som inspirerer deg, del dine egne outfits og knytt kontakt med et kreativt, inkluderende miljø.</li>
-</ul>
-
-<h2>Hva vi kan gjøre for deg</h2>
-<ul>
-<li><strong>Reimagine your closet:</strong> Del garderoben din og utforsk utallige outfitideer.</li>
-<li><strong>Wishlist:</strong> Bygg din personlige ønskeliste med inspirerende plagg.</li>
-<li><strong>Inspiration, Every day:</strong> Se hvordan andre bruker lignende plagg og få kontinuerlig inspirasjon.</li>
-<li><strong>A style community that gets you:</strong> Følg skapere, del looks, og koble med moteentusiaster.</li>
-</ul>
-
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-top">
+    <a class="logo" href="index.html">Clinelia</a>
+    <button class="close" onclick="closeMenu()">×</button>
+  </div>
+  <div class="mobile-links">
+    <a href="index.html">Introduksjon</a>
+    <a href="info.html">Informasjon</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Service</a>
+  </div>
+  <div class="mobile-download">
+    <p>Last ned appen</p>
+    <a class="ios-btn" href="#"> Download for iOS</a>
+  </div>
 </div>
 
-<div class="footer">
-© 2026 Clinelia. Alle rettigheter reservert.
-</div>
+<main class="page">
+  <h1>Informasjon</h1>
+  <p>Clinelia hjelper deg med helse, booking og kommunikasjon. Her er hvordan vi kan støtte deg:</p>
+
+  <section class="card">
+    <h2>Kjerneprinsipper</h2>
+    <ul>
+      <li><strong>Express yourself:</strong> Del din unike stil – outfits, vesker, sko og tilbehør – og inspirer andre.</li>
+      <li><strong>Discover parts of yourself:</strong> Utforsk nye looks og oppdag stiler du ikke visste du likte.</li>
+      <li><strong>Inspiration:</strong> Få inspirasjon fra ulike stilkategorier og kombinasjoner.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Om fellesskapet</h2>
+    <ul>
+      <li>Fashion handler om å uttrykke seg, finne inspirasjon og skape forbindelser med likesinnede.</li>
+      <li><strong>Global community:</strong> Møt moteentusiaster over hele verden.</li>
+      <li><strong>Creative inspiration:</strong> Oppdag daglig inspirasjon fra andre brukere.</li>
+      <li><strong>Supportive environment:</strong> Et positivt fellesskap uten dømming.</li>
+      <li>Følg skapere som inspirerer deg, del dine egne outfits og knytt kontakt med et kreativt, inkluderende miljø.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Hva vi kan gjøre for deg</h2>
+    <ul>
+      <li><strong>Reimagine your closet:</strong> Del garderoben din og utforsk utallige outfitideer.</li>
+      <li><strong>Wishlist:</strong> Bygg din personlige ønskeliste med inspirerende plagg.</li>
+      <li><strong>Inspiration, Every day:</strong> Se hvordan andre bruker lignende plagg og få kontinuerlig inspirasjon.</li>
+      <li><strong>A style community that gets you:</strong> Følg skapere, del looks, og koble med moteentusiaster.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer">© 2026 Clinelia. Alle rettigheter reservert.</footer>
+
+<script>
+function openMenu(){document.getElementById("mobileMenu").classList.add("active")}
+function closeMenu(){document.getElementById("mobileMenu").classList.remove("active")}
+</script>
 
 </body>
 </html>
