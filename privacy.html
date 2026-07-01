@@ -18,45 +18,42 @@ html,body{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
 }
 
-.site-header{
+.header{
   width:100%;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 26px 0 26px;
+  padding:16px 24px 0 24px;
 }
 
 .logo{
   color:#000;
   text-decoration:none;
-  font-size:24px;
-  line-height:1;
+  font-size:22px;
   font-weight:700;
-  letter-spacing:-0.4px;
+  line-height:1;
+  letter-spacing:-0.3px;
 }
 
-.menu-button{
-  display:block;
-  background:none;
+.menu-btn{
+  width:30px;
+  height:24px;
   border:0;
+  background:transparent;
   padding:0;
   margin:0;
-  width:32px;
-  height:26px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
   cursor:pointer;
 }
 
-.menu-button span{
+.menu-btn span{
   display:block;
-  width:32px;
-  height:4px;
+  width:30px;
+  height:3.5px;
   background:#000;
   border-radius:20px;
-  margin-bottom:7px;
-}
-
-.menu-button span:last-child{
-  margin-bottom:0;
 }
 
 .desktop-nav{
@@ -65,64 +62,64 @@ html,body{
 
 .page{
   width:100%;
-  max-width:610px;
-  padding:58px 30px 56px 26px;
+  max-width:600px;
+  padding:56px 24px 55px 24px;
 }
 
-.page-title{
-  margin:0 0 8px 0;
-  font-size:34px;
-  line-height:1.08;
+h1{
+  margin:0 0 7px 0;
+  font-size:30px;
+  line-height:1.1;
   font-weight:800;
-  letter-spacing:-1.1px;
+  letter-spacing:-0.8px;
 }
 
-.effective-date{
-  margin:0 0 42px 0;
-  font-size:16px;
-  line-height:1.4;
-  font-weight:400;
-  color:#8d8d8d;
-}
-
-.page p{
-  margin:0 0 26px 0;
+.date{
+  margin:0 0 58px 0;
   font-size:15px;
-  line-height:1.78;
+  line-height:1.4;
+  color:#8a8a8a;
   font-weight:400;
-  color:#111;
 }
 
-.page h2{
-  margin:38px 0 12px 0;
-  font-size:19px;
-  line-height:1.25;
+p{
+  margin:0 0 24px 0;
+  font-size:14.5px;
+  line-height:1.82;
+  color:#111;
+  font-weight:400;
+}
+
+h2{
+  margin:36px 0 12px 0;
+  font-size:18px;
+  line-height:1.3;
   font-weight:800;
   letter-spacing:-0.2px;
 }
 
-.page ul{
-  margin:0 0 26px 0;
-  padding-left:20px;
+ul{
+  margin:0 0 24px 0;
+  padding-left:19px;
 }
 
-.page li{
+li{
   margin:0 0 7px 0;
   padding-left:2px;
-  font-size:15px;
-  line-height:1.78;
-  font-weight:400;
+  font-size:14.5px;
+  line-height:1.82;
   color:#111;
 }
 
-.page strong{
+strong{
   font-weight:700;
 }
-  .footer{
+
+.footer{
   text-align:center;
   color:#777;
   font-size:12px;
-  padding:24px 20px 44px;
+  padding:28px 20px 44px;
 }
 
 .mobile-menu{
@@ -131,7 +128,7 @@ html,body{
   inset:0;
   background:#fff;
   z-index:9999;
-  padding:20px 26px 30px;
+  padding:18px 24px 34px 24px;
 }
 
 .mobile-menu.active{
@@ -144,15 +141,15 @@ html,body{
   align-items:center;
 }
 
-.close-button{
-  background:none;
+.close-btn{
   border:0;
+  background:transparent;
+  color:#000;
   padding:0;
   margin:0;
-  color:#000;
-  font-size:50px;
-  line-height:1;
+  font-size:48px;
   font-weight:300;
+  line-height:0.8;
   cursor:pointer;
 }
 
@@ -160,9 +157,9 @@ html,body{
   height:61vh;
   display:flex;
   flex-direction:column;
-  justify-content:center;
   align-items:center;
-  gap:56px;
+  justify-content:center;
+  gap:54px;
 }
 
 .mobile-links a{
@@ -170,6 +167,7 @@ html,body{
   text-decoration:none;
   font-size:24px;
   font-weight:500;
+  line-height:1;
 }
 
 .mobile-download{
@@ -177,235 +175,231 @@ html,body{
 }
 
 .mobile-download p{
-  margin:0 0 16px;
+  margin:0 0 16px 0;
   font-size:18px;
+  line-height:1.2;
   font-weight:700;
 }
 
-.ios-button{
+.ios-btn{
   display:inline-flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
   width:100%;
   max-width:530px;
-  padding:16px 20px;
-  border-radius:999px;
   background:#000;
   color:#fff;
   text-decoration:none;
+  border-radius:999px;
+  padding:16px 20px;
   font-size:22px;
   font-weight:700;
 }
 
-@media(max-width:390px){
-
-.site-header{
-  padding:18px 24px 0;
-}
-
-.logo{
-  font-size:23px;
-}
-
-.page{
-  padding:54px 24px 50px;
-}
-
-.page-title{
-  font-size:34px;
-}
-
-.effective-date{
-  font-size:16px;
-}
-
-.page p,
-.page li{
-  font-size:15px;
-}
-
-.page h2{
-  font-size:19px;
-}
-
-}
-
 @media(min-width:801px){
+  .header{
+    padding:24px 52px 0 52px;
+  }
 
-.site-header{
-  padding:24px 50px 0;
+  .menu-btn{
+    display:none;
+  }
+
+  .desktop-nav{
+    display:flex;
+    align-items:center;
+    gap:26px;
+  }
+
+  .desktop-nav a{
+    color:#000;
+    text-decoration:none;
+    font-size:15px;
+    font-weight:500;
+  }
+
+  .download{
+    background:#000;
+    color:#fff!important;
+    padding:11px 22px;
+    border-radius:999px;
+  }
+
+  .page{
+    margin:0 auto;
+    max-width:620px;
+  }
 }
 
-.menu-button{
-  display:none;
-}
+@media(max-width:390px){
+  .header{
+    padding:14px 22px 0 22px;
+  }
 
-.desktop-nav{
-  display:flex;
-  gap:26px;
-  align-items:center;
-}
+  .logo{
+    font-size:21px;
+  }
 
-.desktop-nav a{
-  color:#000;
-  text-decoration:none;
-  font-size:15px;
-}
+  .page{
+    padding:52px 22px 52px 22px;
+  }
 
-.desktop-nav .download{
-  background:#000;
-  color:#fff;
-  padding:11px 22px;
-  border-radius:999px;
-}
+  h1{
+    font-size:28px;
+  }
 
-.page{
-  margin:0 auto;
-}
+  .date{
+    font-size:14px;
+    margin-bottom:56px;
+  }
 
-}
+  p,li{
+    font-size:13.5px;
+    line-height:1.8;
+  }
 
+  h2{
+    font-size:17px;
+  }
+}
 </style>
-
 </head>
 
 <body>
 
-<header class="site-header">
+<header class="header">
+  <a class="logo" href="index.html">Clinelia</a>
 
-<a class="logo" href="index.html">Clinelia</a>
+  <nav class="desktop-nav">
+    <a href="index.html">Introduksjon</a>
+    <a href="info.html">Informasjon</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Service</a>
+    <a class="download" href="#">Last ned appen</a>
+  </nav>
 
-<nav class="desktop-nav">
-<a href="index.html">Introduksjon</a>
-<a href="info.html">Informasjon</a>
-<a href="privacy.html">Privacy</a>
-<a href="terms.html">Service</a>
-<a class="download" href="#">Last ned appen</a>
-</nav>
-
-<button class="menu-button" onclick="openMenu()">
-<span></span>
-<span></span>
-<span></span>
-</button>
-
+  <button class="menu-btn" onclick="openMenu()" aria-label="Åpne meny">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-top">
+    <a class="logo" href="index.html">Clinelia</a>
+    <button class="close-btn" onclick="closeMenu()" aria-label="Lukk meny">×</button>
+  </div>
 
-<div class="mobile-top">
+  <div class="mobile-links">
+    <a href="index.html">Introduksjon</a>
+    <a href="info.html">Informasjon</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Service</a>
+  </div>
 
-<a class="logo" href="index.html">Clinelia</a>
-
-<button class="close-button" onclick="closeMenu()">×</button>
-
-</div>
-
-<div class="mobile-links">
-
-<a href="index.html">Introduksjon</a>
-<a href="info.html">Informasjon</a>
-<a href="privacy.html">Privacy</a>
-<a href="terms.html">Service</a>
-
-</div>
-
-<div class="mobile-download">
-
-<p>Last ned appen</p>
-
-<a class="ios-button" href="#">
- Download for iOS
-</a>
-
-</div>
-
+  <div class="mobile-download">
+    <p>Last ned appen</p>
+    <a class="ios-btn" href="#"> Download for iOS</a>
+  </div>
 </div>
 
 <main class="page">
+  <h1>Privacy Policy</h1>
+  <p class="date">Effective as of June 22, 2026</p>
+    <p>Vi tar personvern på alvor og sørger for at informasjonen din behandles trygt og ansvarlig.
+  Ved å bruke appen samtykker du til hvordan vi samler inn, bruker og beskytter informasjonen din.</p>
 
-<h1 class="page-title">Privacy Policy</h1>
+  <h2>1. Definisjoner</h2>
+  <ul>
+    <li>App – mobilapplikasjonen Clinelia.</li>
+    <li>Company / Vi / Oss / Vår – Clinelia, [Din bedrift], [Adresse].</li>
+    <li>Personopplysninger – informasjon som kan identifisere deg.</li>
+    <li>Bruksdata – data generert automatisk ved bruk av appen.</li>
+    <li>Tjenesteleverandør – tredjeparter som behandler data på våre vegne.</li>
+    <li>Du / Bruker – den som bruker appen.</li>
+  </ul>
 
-<p class="effective-date">
-Effective as of June 22, 2026
-</p>
-<p>
-At Clinelia, it’s important to us to be open and transparent with our users who trust us with their data. This Privacy Policy describes how we collect, use and protect your information.
-</p>
+  <h2>2. Hvilken informasjon vi samler inn</h2>
 
-<h2>1. Definisjoner</h2>
+  <p><strong>Personopplysninger:</strong></p>
+  <ul>
+    <li>Navn, e-postadresse, profilinformasjon</li>
+    <li>Innhold du deler i appen</li>
+  </ul>
 
-<ul>
-<li>App – mobilapplikasjonen Clinelia.</li>
-<li>Company / Vi / Oss / Vår – Clinelia.</li>
-<li>Personopplysninger – informasjon som kan identifisere deg.</li>
-<li>Bruksdata – informasjon som samles automatisk.</li>
-<li>Tjenesteleverandør – tredjepart som utfører tjenester for oss.</li>
-<li>Du – brukeren av appen.</li>
-</ul>
+  <p><strong>Bruksdata:</strong></p>
+  <ul>
+    <li>Hvordan du bruker appen</li>
+    <li>Enhetsinformasjon og teknisk data</li>
+    <li>IP-adresse</li>
+  </ul>
 
-<h2>2. Hvilken informasjon vi samler inn</h2>
+  <h2>3. Hvordan vi bruker informasjonen din</h2>
+  <ul>
+    <li>Tilby, drifte og forbedre appen</li>
+    <li>Administrere kontoen din</li>
+    <li>Tilpasse brukeropplevelsen</li>
+    <li>Kommunisere med deg</li>
+    <li>Kundeservice</li>
+    <li>Analysere bruk</li>
+    <li>Forretningsmessige transaksjoner</li>
+  </ul>
 
-<p><strong>Personopplysninger</strong></p>
+  <h2>4. Innhold og opplastinger</h2>
+  <ul>
+    <li>Du beholder eierskap til ditt innhold</li>
+    <li>Vi kan vise og anbefale innholdet</li>
+    <li>Du er ansvarlig for at innholdet følger loven</li>
+  </ul>
 
-<ul>
-<li>Navn</li>
-<li>E-postadresse</li>
-<li>Profilinformasjon</li>
-<li>Informasjon du deler i appen</li>
-</ul>
+  <h2>5. Barns personvern</h2>
+  <p>Clinelia er ikke ment for barn under 13 år.</p>
 
-<p><strong>Bruksdata</strong></p>
+  <h2>6. Lagring og sikkerhet</h2>
+  <ul>
+    <li>Vi lagrer kun data så lenge det er nødvendig</li>
+    <li>Vi bruker sikkerhetstiltak</li>
+    <li>100 % sikkerhet kan ikke garanteres</li>
+  </ul>
 
-<ul>
-<li>IP-adresse</li>
-<li>Enhetstype</li>
-<li>Operativsystem</li>
-<li>Bruksmønster</li>
-</ul>
+  <h2>7. Deling og overføring av data</h2>
+  <ul>
+    <li>Tjenesteleverandører</li>
+    <li>Forretningshendelser</li>
+    <li>Lovpålagt deling</li>
+    <li>Internasjonale overføringer</li>
+  </ul>
 
-<h2>3. Hvordan vi bruker informasjonen</h2>
+  <h2>8. Dine rettigheter</h2>
+  <ul>
+    <li>Få innsyn i data</li>
+    <li>Endre eller slette</li>
+    <li>Trekke tilbake samtykke</li>
+    <li>Begrense behandling</li>
+  </ul>
 
-<ul>
-<li>For å levere tjenesten.</li>
-<li>For å forbedre appen.</li>
-<li>For kundestøtte.</li>
-<li>For sikkerhet.</li>
-<li>For analyse.</li>
-</ul>
+  <h2>9. Tredjeparts lenker</h2>
+  <p>Vi er ikke ansvarlige for tredjeparts personvernpraksis.</p>
 
-<h2>4. Deling av informasjon</h2>
+  <h2>10. Endringer i personvernerklæringen</h2>
+  <p>Vi kan oppdatere denne erklæringen når som helst.</p>
 
-<p>
-Vi deler kun informasjon når det er nødvendig for å levere tjenesten eller når loven krever det.
-</p>
-
-<h2>5. Lagring av data</h2>
-
-<p>
-Informasjonen lagres så lenge det er nødvendig for å levere tjenesten eller oppfylle juridiske krav.
-</p>
-
-<h2>6. Kontakt</h2>
-
-<p>
-Har du spørsmål om personvern kan du kontakte oss på
-<strong>Clinelia.app@gmail.com</strong>.
-</p>
-
+  <h2>11. Kontakt</h2>
+  <p>Har du spørsmål? Send e-post til: <strong>Clinelia.app@gmail.com</strong></p>
 </main>
 
 <footer class="footer">
-© 2026 Clinelia. Alle rettigheter reservert.
+  © 2026 Clinelia. Alle rettigheter reservert.
 </footer>
 
 <script>
 function openMenu(){
-document.getElementById("mobileMenu").classList.add("active");
+  document.getElementById("mobileMenu").classList.add("active");
 }
 
 function closeMenu(){
-document.getElementById("mobileMenu").classList.remove("active");
+  document.getElementById("mobileMenu").classList.remove("active");
 }
 </script>
 
